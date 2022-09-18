@@ -19,8 +19,8 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-    expose_headers=[],
-    max_age=300,
+    # expose_headers=[],
+    max_age=60,
 )
 
 @app.get("/")
